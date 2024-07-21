@@ -24,7 +24,11 @@ flatpickr(datetimePicker, {
   onClose(selectedDates) {
     userSelectedDate = selectedDates[0];
     if (userSelectedDate < new Date()) {
-      iziToast.warning({ message: "Please choose a date in the future" });
+        iziToast.warning({
+            message: "Please choose a date in the future",
+            position: "topRight",
+            backgroundColor: "#ef4040",
+            messageColor: "#fff"});
       startBtn.disabled = true;
     } else {
       startBtn.disabled = false;
@@ -61,7 +65,12 @@ function updateTimer() {
     clearInterval(timerInterval);
     startBtn.disabled = false;
     datetimePicker.disabled = false;
-    iziToast.info({ message: "Time's up!" });
+      iziToast.info({
+          message: "Time's up!",
+          position: "topRight",
+          backgroundColor: "#59a10d",
+          messageColor: "#fff"
+      });
     return;
   }
 
