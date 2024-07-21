@@ -173,5 +173,99 @@ button:disabled {
   text-transform: uppercase;
 }
 
-.form {
+.form-delay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  height: 72px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px; 
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+input[name="delay"] {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  transition: border 0.3s;
+}
+input[name="delay"]:hover {
+border: 1px solid #000;
+}
+input[name="delay"]:active {
+border: 1px solid #4e75ff;
+}
+
+fieldset {
+  width: 360px;
+  height: 78px;
+  box-sizing: border-box;
+  margin: 16px 0 0 0;
+  border-radius: 4px;
+  display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: row;
+    gap: 48px;
+    padding-left: 28px;
+    padding-right: 48px;
+    padding-bottom: 8px;
+    border: 1px solid #808080;
+    transition: border 0.3s;
+}
+fieldset:hover {
+border: 1px solid #000;
+}
+legend {
+  font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+.label-radio {
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #2e2f42;
+      height: 32px;
+}
+input[type="radio"] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+  width: 20px;
+  height: 20px;
+}
+input[type="radio"]:active {
+  border: 1px solid #4e75ff;
+  background-color: #4e75ff;
+}
+button[type="submit"] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  margin-top: 24px;
+  transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+background-color: #6c8cff;
 }
